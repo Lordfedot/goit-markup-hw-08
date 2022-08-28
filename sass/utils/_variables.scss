@@ -1,0 +1,28 @@
+$accent-color :#2196F3;
+$white: #FFFFFF;
+$accent-color-dark: #188CE8;
+$title-color:#212121;
+$text-color:  #757575;
+$background-color:#F5F4FA;
+$icon-color: #AFB1B8;
+$footer-background-color: #2F303A;
+
+
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    letter-spacing: 0.03em;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}

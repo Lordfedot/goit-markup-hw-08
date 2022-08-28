@@ -1,0 +1,24 @@
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./components/container-section";
+
+@import "./components/logo";
+@import "./components/networks";
+@import "./components/menu";
+@import "./components/contacts";
+
+@import "./components/header";
+@import "./components/site-nav";
+@import "./components/footer";
+
+@import "./components/index/hero.scss";
+@import "./components/index/features";
+@import "./components/index/specialty";
+@import "./components/index/team";
+@import "./components/index/customers";
+@import "./components/index/modal";
+
+@import "./components/portfolio/filter";
+@import "./components/portfolio/pictures";
+@import "./components/portfolio/thumb";
+

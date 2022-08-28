@@ -1,0 +1,218 @@
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+
+    &--is-hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+    min-height: 609px;
+    
+    background: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+
+    @media screen and (min-width:1200px){
+        width: 528px;
+        min-height: 581px;
+    }
+
+    &__button{
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        cursor: pointer;
+        background-color:$white;
+    
+        width:30px;
+        height: 30px;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover, &:focus {
+            fill: var(--brand-color);
+        }
+    }
+
+    &__close-button{
+        width: 18px;
+        height: 18px;
+    }
+
+    &__title{
+        margin-top: 0;
+        margin-bottom: 12px;
+    
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    
+        color: $title-color;
+    }
+    
+}
+
+
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+
+    &__label{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    
+        text-align: start;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    
+        color: var(--text-color);
+    
+        margin-bottom: 10px;
+    
+        &:focus-within{
+            fill: $accent-color;
+        }
+    }
+    &__icon{
+        position: absolute;
+        top:29px;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__text{
+        padding: 12px;
+        padding-left: 42px;
+        margin-top: 4px;
+        
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:focus-within{
+            border: 1px solid $accent-color;
+            outline: none
+        }
+    }
+
+    &__textarea{
+        resize: none;
+        width: 370px;
+        height: 138px;
+    
+        padding: 12px 16px;
+        margin-top: 4px;
+    
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+    
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+        
+            color: rgba(117, 117, 117, 0.5);  
+        }
+    
+        &:focus-within {
+            border: 1px solid $accent-color;
+            outline: none
+        }
+    }
+
+    &__checkbox{
+        display: block;
+        text-align: center;
+    
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 1.71;
+    
+        color: $text-color;
+    
+    }
+
+    &__check{
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px;
+    }
+
+    &__checked{
+        display: inline-block;
+        width: 16px;
+        height: 15px;
+    
+        border: 2px solid $title-color;
+        border-radius: 2px;
+    }
+
+    &__submit-button{
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        height: 50px;
+    
+        color: $white;
+        background-color: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+
+        transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover,&:focus {
+            background-color: $accent-color-dark;
+        }
+    }
+}
+.deal {
+    color: $accent-color;
+}
+.sign-up-form__check:checked + .sign-up-form__checked{
+    background-image: url(../../../images/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border: transparent
+}

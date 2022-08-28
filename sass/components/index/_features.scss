@@ -1,0 +1,45 @@
+.features{
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+    &__item{
+        @media screen and (min-width:768px){
+            width: calc((100% - 2 * 30px)/2)
+        } 
+        @media screen and (min-width:1200px){
+            width: calc((100% - 4 * 30px)/4)
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: $title-color;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+        
+        color: $text-color;
+    }
+
+    &__icon{
+        margin-bottom: 30px;
+        padding: 25px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $background-color;
+    }
+}

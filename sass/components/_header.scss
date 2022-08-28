@@ -1,0 +1,26 @@
+.header{
+    border-bottom: 1px solid #ECECEC;
+    
+    &__container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__section{
+        @media screen and (max-width:767px){
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        @media screen and (min-width:768px){
+            padding-top: 21px;
+            padding-bottom: 21px;
+        }
+
+        @media screen and (min-width:1200px){
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+       
+    }
+}
