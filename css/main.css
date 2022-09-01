@@ -675,12 +675,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .site-nav__link--curent::after {
-    bottom: -34px;
+    bottom: -33px;
   }
 }
 @media screen and (min-width: 1200px) {
   .site-nav__link--curent::after {
-    bottom: -36px;
+    bottom: -38px;
   }
 }
 
