@@ -32,37 +32,37 @@
                                         <a class="site-nav__link" href="#">Контакти</a>
                                     </li>
                                 </ul>
-                                <ul class="contacts">
-                                    <li class="contacts__item">
-                                        <a class="contacts__tel" href="tel:+380961111111">
-                                            <svg class="contacts__envelope">
-                                                <use href="./images/icons.svg#envelope"></use>
-                                            </svg>
-                                            +38 096 111 11 11</a>
-                                    </li>
-                                    <li class="contacts__item">
-                                        <a class="contacts__post" href="mailto:info@devstudio.com">
-                                            <svg class="contacts__smartphone">
-                                                <use href="./images/icons.svg#smartphone"></use>
-                                            </svg>
-                                            info@devstudio.com</a>
-                                    </li>
-                                </ul>
-                                <ul class="menu-networks">
-                                    <li class="menu-networks__item">
-                                        <a class="menu-networks__link" href="">Instagram</a>
-                                    </li>
-                                    <li class="menu-networks__item">
-                                        <a class="menu-networks__link" href="">Twitter</a>
-                                    </li>
-                                    <li class="menu-networks__item">
-                                        <a class="menu-networks__link" href="">Facebook</a>
-                                    </li>
-                                    <li class="menu-networks__item">
-                                        <a class="menu-networks__link" href="">LinkedIn</a>
-                                    </li>
-                                </ul>
                             </nav>
+                            <ul class="contacts">
+                                <li class="contacts__item">
+                                    <a class="contacts__tel" href="tel:+380961111111">
+                                        <svg class="contacts__envelope">
+                                            <use href="./images/icons.svg#envelope"></use>
+                                        </svg>
+                                        +38 096 111 11 11</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__post" href="mailto:info@devstudio.com">
+                                        <svg class="contacts__smartphone">
+                                            <use href="./images/icons.svg#smartphone"></use>
+                                        </svg>
+                                        info@devstudio.com</a>
+                                </li>
+                            </ul>
+                            <ul class="menu-networks">
+                                <li class="menu-networks__item">
+                                    <a class="menu-networks__link" href="">Instagram</a>
+                                </li>
+                                <li class="menu-networks__item">
+                                    <a class="menu-networks__link" href="">Twitter</a>
+                                </li>
+                                <li class="menu-networks__item">
+                                    <a class="menu-networks__link" href="">Facebook</a>
+                                </li>
+                                <li class="menu-networks__item">
+                                    <a class="menu-networks__link" href="">LinkedIn</a>
+                                </li>
+                            </ul>
                     </div>
     
                     <button class="menu__toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -138,7 +138,7 @@
                 <h2 class="section__title">Чим ми займаємося</h2>
                 <ul class="specialty">
                     <li class="specialty__item">
-                        <img srcset="./images/img.jpg 1x, ./images/img@2x 2x" src="./images/img.jpg" alt="комп'ютер">
+                        <img srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" alt="комп'ютер">
                         <div class="specialty__div">
                             <p class="specialty__text">Десктопні додатки</p>
                         </div>
@@ -325,27 +325,30 @@
     <footer class="footer">
         <div class="container container--flex">
             <div class="footer__flex">
-                <div>
+                <div class="footer--address">
                     <a class="logo" href="">
                         Web<span class="logo__span logo__span--color">Studio</span>
-                        <address class="address">
-                            <ul>
-                                <li class="address__item">
-                                    <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">
-                                        м. Київ, пр-т Лесі Украінки, 26
-                                    </a>
-                                </li>
-                                <li class="address__item">
-                                    <a class="address__link address__link--color" href="mailto:info@example.com">
-                                        info@example.com
-                                    </a>
-                                </li>
-                                <li class="address__item">
-                                    <a class="address__link address__link--color" href="tel:+380991111111">+38 099 111 11 11</a>
-                                </li>
-                            </ul>
-                        </address>
+                        
                     </a>
+                    <address class="address">
+                        <ul>
+                            <li class="address__item">
+                                <a class="address__link" href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow">
+                                    м. Київ, пр-т Лесі Украінки, 26
+                                </a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link address__link--color" href="mailto:info@example.com">
+                                    info@example.com
+                                </a>
+                            </li>
+                            <li class="address__item">
+                                <a class="address__link address__link--color" href="tel:+380991111111">+38 099 111 11 11
+                                    
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
                 </div>
                 <div class="join">
                     <p class="join__text">Приєднуйтесь</p>
@@ -375,16 +378,14 @@
             </div>
             <div class="subscribe">
                 <p class="subscribe__text">Підпишіться на розсилку</p>
-                <div class="subscribe__div">
-                    <form>
-                        <input class="subscribe__input" type="text" placeholder="E-mail">
-                    </form>
-                    <button class="subscribe__button" type="button">
+                <form class="subscribe__form">
+                    <input class="subscribe__input" type="text" placeholder="E-mail">
+                    <button class="subscribe__button" type="submit">
                         Підписатись
                         <svg width="24px" height="24px">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
-                </div>
+                </form>      
                 </button>
             </div>
         </div>

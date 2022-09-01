@@ -7,18 +7,25 @@
     }
 
     &__item{
+        @media screen and (max-width:767px){
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
         @media screen and (min-width:768px){
-            width: calc((100% - 2 * 30px)/2)
+            width: calc((100% - 2 * 30px)/2);
+            
         } 
         @media screen and (min-width:1200px){
             width: calc((100% - 4 * 30px)/4)
         }
     }
     &__title{
+        margin: 0;
+
         font-weight: 700;
         font-size: 14px;
         line-height: 16px;
-        text-align: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
@@ -26,6 +33,8 @@
     }
 
     &__text{
+        margin-top: 10px;
+        margin-bottom: 0;
         font-size: 14px;
         line-height: 24px;
         
@@ -33,8 +42,9 @@
     }
 
     &__icon{
+        height: 120px;
+        margin-top: 0;
         margin-bottom: 30px;
-        padding: 25px;
         
         display: flex;
         justify-content: center;
